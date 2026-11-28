@@ -123,6 +123,15 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 new VentanaRetiro().setVisible(true);
                 this.dispose();
                 break;
+            case "3":
+                new VentanaSaldo().setVisible(true);
+                this.dispose();
+                break;
+            case "4":
+                // Mostrar el mensaje y cerrar el programa al dar OK
+                javax.swing.JOptionPane.showMessageDialog(this, "Cerrando sesión, vuelva pronto...", "Salir", javax.swing.JOptionPane.INFORMATION_MESSAGE);
+                System.exit(0);
+                break;
 
             default:
                 // Mensaje si escriben otra cosa distinta a 1 o 2
@@ -130,7 +139,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 txtOpcion.setText("");
                 break;
         }           
-                    
+               
             
     
     
